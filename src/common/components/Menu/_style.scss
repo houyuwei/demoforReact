@@ -1,0 +1,37 @@
+.default-menu{
+    list-style: none;
+    padding: 0 0 50px;
+    margin: 0;
+    display:flex;
+	flex-direction:column;
+    .menu-item{
+        width: 100%;
+        line-height:31px;
+        height:60px;
+        cursor:pointer;
+      
+        border-bottom: 1px solid #ccc;
+        font-family: 'Rakuten Sans UI Bold',sans-serif;
+        a{
+            display: inline-block;
+            padding:14px;
+            width: 100%;
+            color: #333;
+            font-size: 14px;
+            user-select: none;
+            text-decoration: none;
+        }
+        &:hover{
+            background:rgba(221,221,221,0.3)
+        } 
+        &:last-child{
+            border-bottom:none;
+        }
+        &.is-active{
+            transition:0.5s;
+            background-color: #dddddd;
+            border-radius: 4px;
+            font-weight: 800;
+        }
+    }
+}
